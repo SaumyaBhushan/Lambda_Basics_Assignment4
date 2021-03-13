@@ -3,11 +3,13 @@ package com.knoldus;
 import java.util.Scanner;
 
 public class CodeDriver {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-        int firstNo = scanner.nextInt();
-        int secondNo = scanner.nextInt();
-        System.out.println(RangeMultiplication.multiply.applyAsLong(firstNo,secondNo));
+        System.out.println("Please enter a number");
+        String firstNo = scanner.nextLine();
+        System.out.println("Please enter another number");
+        String secondNo = scanner.nextLine();
+        System.out.println(RangeMultiplication.multiply(firstNo,secondNo));
 
     }
 }
